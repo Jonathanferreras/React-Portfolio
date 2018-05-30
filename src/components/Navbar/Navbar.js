@@ -12,7 +12,13 @@ export default class Navbar extends Component {
         <div className="container">
           <nav className="navbar navbar-expand-sm">
             <a className="navbar-brand" href="#">{ logo } </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
               <span className="navbar-toggler-icon">
                 <div className="line1 icon"></div>
                 <div className="line2 icon"></div>
@@ -23,7 +29,8 @@ export default class Navbar extends Component {
               <ul className="navbar-nav">
                 { 
                   links.map((link, index) => {
-                  return <li className="nav-item" key={ index.toString() }><Link to={"/" + link}>{ link }</Link></li>;})
+                  return <li className="nav-item" key={index.toString()}>
+                    <Link to={"/" + (link != "HOME"? link.toLowerCase() : "")}>{ link }</Link></li>;})
                 }          
               </ul>
             </div>

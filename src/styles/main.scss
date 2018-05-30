@@ -51,21 +51,22 @@ hr {
   border: 2px solid #666;
 }
 
+
+/*----------------------------------*/
+
 $dark-grey: #45484B;
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 10px;
-	background: white;
-	color: black;
 }
 
 .Navbar {
 	background-color: $dark-grey;
 	color: white;
-
 	.navbar-nav{
 		li{
+			font-size: 1.2em;
 			margin-right: 3em;
 			a{
 				color: white;

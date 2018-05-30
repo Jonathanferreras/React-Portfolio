@@ -48,6 +48,7 @@ table {
 hr {
   border: 2px solid #666; }
 
+/*----------------------------------*/
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
@@ -58,6 +59,7 @@ body {
   background-color: #45484B;
   color: white; }
   .Navbar .navbar-nav li {
+    font-size: 1.2em;
     margin-right: 3em; }
     .Navbar .navbar-nav li a {
       color: white;
