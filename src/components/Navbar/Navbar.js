@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 const log = console.log;
 
 export default class Navbar extends Component {
@@ -18,11 +19,11 @@ export default class Navbar extends Component {
                 <div className="line3 icon"></div>
               </span>
             </button>
-            <div className="collapse navbar-collapse justify-content-end">
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 { 
                   links.map((link, index) => {
-                  return <li key={ index.toString() }>{ link }</li>;})
+                  return <li className="nav-item" key={ index.toString() }><Link to={"/" + link}>{ link }</Link></li>;})
                 }          
               </ul>
             </div>

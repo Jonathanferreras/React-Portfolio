@@ -59,6 +59,11 @@ body {
   color: white; }
   .Navbar .navbar-nav li {
     margin-right: 3em; }
+    .Navbar .navbar-nav li a {
+      color: white;
+      text-decoration: none; }
+      .Navbar .navbar-nav li a:hover {
+        color: #B8E994; }
   .Navbar .navbar-toggler-icon {
     height: 30px;
     width: 30px; }
