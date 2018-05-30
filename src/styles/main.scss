@@ -51,47 +51,38 @@ hr {
   border: 2px solid #666;
 }
 
+$dark-grey: #45484B;
+
 body {
-  background: #3f51b5;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	background: white;
+	color: black;
 }
 
-.counter {
-  display: flex;
-  margin: 0 auto;
-  height: 500px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.Navbar {
+	background-color: $dark-grey;
+	color: white;
 
-  > div:first-child {
-    font-size: 100px;
-  }
+	.navbar-nav{
+		li{
+			margin-right: 3em;
+		}
+	}
 
-  a {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .controls {
-    display: flex;
-    flex-direction: row-reverse;
-
-    > div {
-      min-width: 40px;
-      height: 40px;
-      text-align: center;
-      background: #fff;
-      color: #3f51b5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 0 0 5px;
-      cursor: pointer;
-    }
-  }
+	.navbar-toggler-icon{
+		height:30px;
+		width:30px;
+		.icon{
+			height: 0.1em;
+			background: white;
+			margin-bottom: 8px;
+		}
+		.line1{ width: 30px; }
+		.line2{ width: 25px; }
+		.line3{ width: 20px; } 
+	}
 }
+
+
+

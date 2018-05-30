@@ -49,36 +49,26 @@ hr {
   border: 2px solid #666; }
 
 body {
-  background: #3f51b5;
-  color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 36px; }
+  font-size: 10px;
+  background: white;
+  color: black; }
 
-.counter {
-  display: flex;
-  margin: 0 auto;
-  height: 500px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-  .counter > div:first-child {
-    font-size: 100px; }
-  .counter a {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none; }
-  .counter .controls {
-    display: flex;
-    flex-direction: row-reverse; }
-    .counter .controls > div {
-      min-width: 40px;
-      height: 40px;
-      text-align: center;
-      background: #fff;
-      color: #3f51b5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 0 0 5px;
-      cursor: pointer; }
+.Navbar {
+  background-color: #45484B;
+  color: white; }
+  .Navbar .navbar-nav li {
+    margin-right: 3em; }
+  .Navbar .navbar-toggler-icon {
+    height: 30px;
+    width: 30px; }
+    .Navbar .navbar-toggler-icon .icon {
+      height: 0.1em;
+      background: white;
+      margin-bottom: 8px; }
+    .Navbar .navbar-toggler-icon .line1 {
+      width: 30px; }
+    .Navbar .navbar-toggler-icon .line2 {
+      width: 25px; }
+    .Navbar .navbar-toggler-icon .line3 {
+      width: 20px; }
