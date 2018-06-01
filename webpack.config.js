@@ -20,6 +20,10 @@ module.exports = {
         loaders: "eslint-loader",
       },
       {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: ExtractTextPlugin.extract(["url-loader", "resolve-url-loader"])
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: "babel-loader",

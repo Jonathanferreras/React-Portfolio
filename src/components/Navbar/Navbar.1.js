@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
-import { MenuBtn } from "./MenuBtn";
-import { Logo } from "./Logo";
 const log = console.log;
 
 export default class Navbar extends Component {
   constructor(props){
     super(props);
+
+
+
   }
 
   handleClick = () => {
@@ -21,9 +21,17 @@ export default class Navbar extends Component {
     return(
       <div className="Navbar">
         <div className="container">
-          <ul className="Navbar-Nav" role="navigation">
-            <MenuBtn />
-            <Logo />
+          <ul className="Navbar-links" role="navigation">
+
+            <li className="Navbar-menu"> 
+              <button className="Navbar-menu-btn">              
+                <div className="icon line1"></div>
+                <div className="icon line2"></div>
+                <div className="icon line3"></div>
+              </button>
+            </li>   
+
+            <li className="Navbar-brand"><Link to="/">LOGO</Link></li>
 
             { 
               links.map((link, index) => {

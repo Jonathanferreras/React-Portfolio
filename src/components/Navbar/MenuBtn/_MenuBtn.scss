@@ -1,0 +1,25 @@
+@import '../../../styles/effects';
+
+.Navbar-menu {
+  margin-right: auto;
+  display: flex;
+  .Navbar-menu-btn {
+    justify-content: center;
+    @include rm-btn-style;
+  }
+  
+  .icon {
+    height: 1px;
+    background-color: white;
+    margin: 7px 0;
+  }
+  
+  .line1{ width: 30px; }
+  .line2{ width: 26px; }
+  .line3{ width: 24px; }
+  
+  //display none after 768px
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}

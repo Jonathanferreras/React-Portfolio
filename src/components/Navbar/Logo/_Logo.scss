@@ -1,0 +1,11 @@
+.Navbar-brand {
+  margin-right: auto;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {}
+}
