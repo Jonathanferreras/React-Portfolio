@@ -1,12 +1,14 @@
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
   entry: ["./src/index.js", "./src/styles/main.scss"],
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "./public/dist")
+    path: path.resolve(__dirname, "./public/dist"),
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -36,13 +38,17 @@ module.exports = {
   },
   devServer: {
     contentBase: "./public/",
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: true,
   },
   plugins: [
     new ExtractTextPlugin("bundle.css"),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production")
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({
+      template: "public/index.html"
+    })
   ]
 };

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import { Navbar } from "../../components";
+import { Navbar, Background } from "../../components";
 
 const log = console.log;
 
 export default class About extends Component {
   render() {
-    const url = "images/about-bg.jpeg";
+    let page = this.props.location.pathname;
+
     return(
       <div className="About">
+        <Background current={page}/>
         <Navbar />
         About
       </div>

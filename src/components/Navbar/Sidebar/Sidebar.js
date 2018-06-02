@@ -15,9 +15,18 @@ export default class Sidebar extends Component {
 
     return(
       <div className="Navbar-sidebar" style={ visible }>
-        <button className="Navbar-sidebar-close" onClick={ this.props.handleClick }>X</button>
-        <br/>
-        <span>Menu</span>
+        <button className="Navbar-sidebar-close" onClick={ this.props.handleClick }>
+          <svg>
+            <line x1="1" y1="11" 
+                  x2="11" y2="1" 
+                  stroke="black" 
+                  strokeWidth="2"/>
+            <line x1="1" y1="1" 
+                  x2="11" y2="11" 
+                  stroke="black" 
+                  strokeWidth="2"/>
+          </svg>
+        </button>
         <br/>
         <ul className="Navbar-sidebar-links" role="navigation">
           <Links name={"Navbar-sidebar-link"} />

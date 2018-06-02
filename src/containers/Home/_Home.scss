@@ -1,1 +1,64 @@
-.Home{}
+.Home{
+  .Home-container {
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .Home-shutter {
+      background-color: $dark-green;
+      position: relative;
+      width: 300%;
+    }
+
+    .shutter1 {
+      z-index: 1;
+      height: 20vh;
+      // transform: rotate(350deg) translateX(-50%) translateY(-112%);
+      @include shadow;
+    }
+
+    .shutter2 {
+      z-index: 0.9;
+      height: 40vh;
+      // transform: rotate(-10deg) translateX(-25%) translateY(-38%); 
+    }
+  }
+
+  .Home-landing {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(69,72,75,0.5);
+    @include shadow;
+
+    .Home-heading {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .Home-title {
+        color: white;
+        font-size: 80px;
+        @include text-shadow;
+
+        .highlight{
+          color: $yellow;
+        }
+      }
+
+      .Home-sub-title {
+        color: white;
+        font-size: 40px;
+        @include text-shadow;
+      }
+    }
+
+    .Home-learn-more {
+      button {
+        @include rm-btn-style;
+        background-color: $dark-green;
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@
   background-color: $dark-grey;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
 
   @include shadow;
 

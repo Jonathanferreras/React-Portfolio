@@ -1,7 +1,17 @@
 @mixin shadow {
-  -webkit-box-shadow: -1px 5px 5px 0px rgba(186,186,186,1);
-  -moz-box-shadow: -1px 5px 5px 0px rgba(186,186,186,1);
-  box-shadow: -1px 5px 5px 0px rgba(186,186,186,1);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+@mixin side-shadow {
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+@mixin text-shadow {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
 @mixin rm-btn-style {
@@ -10,5 +20,15 @@
 }
 
 @mixin slide-in {
+  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  transition: left 0.2s linear; 
+}
+
+@mixin tint {
+  position: absolute;
+  z-index: -1;
   
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(86,89,93, 0.5);
 }
