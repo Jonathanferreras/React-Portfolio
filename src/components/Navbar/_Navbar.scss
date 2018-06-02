@@ -1,8 +1,7 @@
-@import '../../styles/colors';
-@import '../../styles/effects';
-
 @import './MenuBtn/MenuBtn';
 @import './Logo/Logo';
+@import './Links/Links';
+@import './Sidebar/Sidebar';
 
 .Navbar {
   height: 10vh;
@@ -18,57 +17,5 @@
     margin: 0;
     list-style: none;
     display: flex;
-
-    .Navbar-link {
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 12px;
-        margin-right: 10px;
-
-        //display none after 768px
-        @media only screen and (min-width: 768px) {
-          font-size: 16px;
-          margin-right: 20px;
-        }
-
-        &:hover {
-          color: $light-green;
-        }
-      }
-
-      //display none below 768px
-      @media only screen and (max-width: 768px) {
-        display:none;
-      }
-    }
-  }
-
-  .Navbar-slide-in {
-    background-color: $light-green;
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 40%;
-    left: -40%;
-
-    .Navbar-slide-in-links {
-      list-style: none;
-
-      .Navbar-slide-in-link {
-        a{
-          color: $dark-grey;
-          text-decoration: none;
-          font-size: 12px;    
-        }
-      }
-    }
-
-    .Navbar-slide-in-close {
-      margin-left: 80%;
-      font-size: 20px;
-      @include rm-btn-style;
-
-    }
   }
 }

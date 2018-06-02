@@ -41,6 +41,46 @@ body {
     text-decoration: none;
     font-size: 20px; }
 
+.Navbar-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px; }
+  @media only screen and (min-width: 768px) {
+    .Navbar-link a {
+      font-size: 16px;
+      margin-right: 20px; } }
+  .Navbar-link a:hover {
+    color: #B8E994; }
+
+@media only screen and (max-width: 768px) {
+  .Navbar-link {
+    display: none; } }
+
+.Navbar-sidebar {
+  background-color: #B8E994;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 40%;
+  left: -40%;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: left 0.2s linear; }
+  .Navbar-sidebar .Navbar-sidebar-links {
+    list-style: none; }
+    .Navbar-sidebar .Navbar-sidebar-links .Navbar-sidebar-link a {
+      color: #45484B;
+      text-decoration: none;
+      font-size: 12px; }
+  .Navbar-sidebar .Navbar-sidebar-close {
+    margin-left: 80%;
+    font-size: 20px;
+    background: none;
+    border: none; }
+  @media only screen and (min-width: 768px) {
+    .Navbar-sidebar {
+      display: none; } }
+
 .Navbar {
   height: 10vh;
   width: 100%;
@@ -55,35 +95,3 @@ body {
     margin: 0;
     list-style: none;
     display: flex; }
-    .Navbar .Navbar-Nav .Navbar-link a {
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      margin-right: 10px; }
-      @media only screen and (min-width: 768px) {
-        .Navbar .Navbar-Nav .Navbar-link a {
-          font-size: 16px;
-          margin-right: 20px; } }
-      .Navbar .Navbar-Nav .Navbar-link a:hover {
-        color: #B8E994; }
-    @media only screen and (max-width: 768px) {
-      .Navbar .Navbar-Nav .Navbar-link {
-        display: none; } }
-  .Navbar .Navbar-slide-in {
-    background-color: #B8E994;
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 40%;
-    left: -40%; }
-    .Navbar .Navbar-slide-in .Navbar-slide-in-links {
-      list-style: none; }
-      .Navbar .Navbar-slide-in .Navbar-slide-in-links .Navbar-slide-in-link a {
-        color: #45484B;
-        text-decoration: none;
-        font-size: 12px; }
-    .Navbar .Navbar-slide-in .Navbar-slide-in-close {
-      margin-left: 80%;
-      font-size: 20px;
-      background: none;
-      border: none; }
