@@ -12,30 +12,26 @@ export default class Navbar extends Component {
   constructor(props){
     super(props);
 
-    this.state = {
-      sidebar: false
-    };
+    this.state = { sidebar: false };
 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(){
-    this.setState({sidebar: !(this.state.sidebar)});
-    log(this.state.sidebar);
+    this.setState({ sidebar: !(this.state.sidebar) });
   }
 
   render() {
-
     return(
       <div className="Navbar">
         <div className="container">
           <ul className="Navbar-Nav" role="navigation">
-            <MenuBtn handleClick={this.handleClick}/>
+            <MenuBtn handleClick={ this.handleClick }/>
             <Logo />
             <Links name={"Navbar-link"} />
           </ul>
         </div>
-        <Sidebar isVisible={ this.state.sidebar }/>
+        <Sidebar isVisible={ this.state.sidebar } handleClick={ this.handleClick }/>
       </div>
     );
   }

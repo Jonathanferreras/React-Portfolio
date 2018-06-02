@@ -11,13 +11,14 @@ export default class Sidebar extends Component {
   }
 
   render() {
-    let visible = this.props.isVisible == true ? {left: 0} : {};
+    let visible = this.props.isVisible == true ? { left: 0 } : {};
 
     return(
-      <div className="Navbar-sidebar" style={visible}>
-        <button className="Navbar-sidebar-close">X</button>
+      <div className="Navbar-sidebar" style={ visible }>
+        <button className="Navbar-sidebar-close" onClick={ this.props.handleClick }>X</button>
         <br/>
         <span>Menu</span>
+        <br/>
         <ul className="Navbar-sidebar-links" role="navigation">
           <Links name={"Navbar-sidebar-link"} />
         </ul>

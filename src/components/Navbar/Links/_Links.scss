@@ -6,7 +6,7 @@
     margin-right: 10px;
 
     //display none after 768px
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 767px) {
       font-size: 16px;
       margin-right: 20px;
     }
@@ -17,7 +17,7 @@
   }
 
   //display none below 768px
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display:none;
   }
 }
